@@ -1,24 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import UseState from './UseState';
+import UseEffect from './UseEffect';
+import UseReducer from './reducer/UseReducer';
+import UseMemo from './memo/UseMemo';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>useState</h1>
+      <UseState />
+      <hr />
+      <h1>useEffect</h1>
+      <UseEffect />
+      <h1>useReducer</h1>
+      <UseReducer/>
+      <h1>useMemo</h1>
+      <UseMemo/>
     </div>
   );
 }
