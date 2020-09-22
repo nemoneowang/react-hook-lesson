@@ -5,6 +5,7 @@ import UseState from './UseState';
 import UseEffect from './UseEffect';
 import UseReducer from './reducer/UseReducer';
 import UseMemo from './memo/UseMemo';
+import UseCallback from './memo/UseCallback';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
       <UseReducer/>
       <h1>useMemo</h1>
       <UseMemo/>
+      <h1>useCallback</h1>
+      <UseCallback/>
     </div>
   );
 }
